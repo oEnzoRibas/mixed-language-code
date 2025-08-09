@@ -10,3 +10,4 @@ nasm -f win64 add.asm -o add.o
 gcc add.c add.o -o soma.exe
 soma.exe
 ```
+at powershell or command prompt.

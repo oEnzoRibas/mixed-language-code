@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-extern long add_numbers(long a, long b); // declare the external assembly function
+extern long multiply_two_numbers(long a, long b); // declare the external assembly function
 
 int main() {
 
