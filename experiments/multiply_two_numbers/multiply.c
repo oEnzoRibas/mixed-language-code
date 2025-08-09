@@ -4,8 +4,8 @@ extern long multiply_two_numbers(long a, long b);
 
 int main() {
 
-    long num1 = 1, long numb2 = 2, result; 
-    printf("Enter two multiply to add: ");
+    long num1, num2,result; 
+    printf("Enter two numbers to multiply: ");
     
     scanf("%ld %ld", &num1, &num2);
 
