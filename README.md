@@ -8,26 +8,30 @@ Welcome to my repository of experiments and study projects that combine multiple
 
 Each folder inside this repo is a self-contained experiment or concept. For example:
 
-```
-experiments/
+``` python
+windows/experiments/
 ├── add_two_numbers/
 │ ├── add.c # C code calling assembly
 │ ├── add.asm # NASM x64 assembly (Windows ABI)
 │ ├── add.o # Assembled object file 
-│ └── soma.exe # Final executable
+│ └── add.exe # Final executable
 ├── ...
 ```
+
 ---
+
 ## 🧠 Concepts Covered
 
 Some of the things I’m experimenting with:
 
 - 🔗 Calling assembly functions from C
-- 🧮 Working with calling conventions (Linux vs Windows)
+- 🧮 Working with calling conventions
+- System V AMD64 ABI (Linux / macOS)
+- Microsoft x64 ABI (Windows)
 - 🧬 Mixing high-level and low-level code
 - 🗂️ Compiling and linking object files manually
-- 📜 Platform-specific behavior (System V vs Microsoft ABI)
-- ⚙️ Toolchains: `nasm`, `gcc`, `clang`, `ld`, etc.
+- 📜 Platform-specific behavior and optimizations
+- ⚙️ Toolchains: nasm, gcc, clang, ld, mingw-w64, etc.
 
 ---
 
@@ -37,26 +41,36 @@ Some of the things I’m experimenting with:
 
 For most experiments, you’ll need:
 
+for `linux`:
+
+- [`nasm`](https://www.nasm.us/) (Netwide Assembler)
+- [`gcc`](https://www.mingw-w64.org/) (MinGW-w64 for Windows)
+- A terminal (e.g., Bash, Zsh)
+
+for `windows`:
+
 - [`nasm`](https://www.nasm.us/) (Netwide Assembler)
 - [`gcc`](https://www.mingw-w64.org/) (MinGW-w64 for Windows)
 - A terminal (Command Prompt, PowerShell, or Git Bash)
 
-
 ### Steps
+
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/your-username/mixed-language-code.git
     ```
+
 2. Browse the language-specific directories.
 3. Follow instructions in each folder's README to run the examples.
 4. `hint`: try add_two_numbers first!
-
 
 ## Contributing
 
 Contributions are welcome! Please submit pull requests with new examples or improvements.
 
 ## License
+
 This project is licensed under the MIT License.
 
 > © Enzo Ribas, 2025. All rights reserved.
